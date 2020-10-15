@@ -1,0 +1,349 @@
+@mixin centerItems() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    width: 100vw;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container-2{
+    text-align: center;
+    background-color: #854fd4 !important;
+    flex: 1;
+    height: 15vh;
+    color: white;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    @include centerItems();
+     h1{
+         margin-bottom: 0 !important;
+     }
+}
+.main-2{
+    background-image: url("../images/accord-work-2.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 10vh;
+    background-attachment: fixed;
+}
+.text-bubble{
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 80vh;
+    width: 50vw;
+    text-align: center;
+    font-family: sans-serif;
+    margin-left: 5vw;
+    overflow: hidden;
+    p{
+        opacity: 1;
+        color: rgba(0, 0, 0, 1);
+        font-size: 15px;
+    }
+    h1{
+        color: rgba(0, 0, 0, 1);
+    }
+    button{
+        opacity: 1;
+        background-color: rgba(89, 49, 150, 1);
+    }
+}
+.footer{
+    height: 70vh;
+    width: 100vw;
+    margin: 0;
+    background-color: #343f4b;
+    color: white;
+    @include centerItems();
+    display: grid;
+    grid-template-rows: 1fr;
+
+     img{
+         height: 40vh;
+         width: 18vw;
+         float: left;
+         justify-self: flex-start;
+     }
+}
+.main-footer{
+    display: flex;
+    height: 40vh;
+}
+
+.useful-link{
+    height: 40vh;
+    width: 40vw;
+    color: white;
+    h3{
+        @include centerItems();
+    }
+    hr{
+        color: black;
+    }
+    .links{
+        list-style-type: none;
+        display: grid;
+        grid-template-rows: 1fr;
+        text-align: center;
+        color: white;
+        .link{
+            color: white;
+            text-decoration: none;
+            a{
+                color: white;
+                text-decoration: none;
+                font-size: 1rem;
+            }
+            a:hover{
+                color: #8756d1 !important;
+            }
+        }
+    }
+}
+.opening-times{
+    width: 30vw;
+    margin-left: 5vw;
+    height: 40vh;
+    float: right;
+    .times{
+    list-style-type: none;
+    padding-left: 0;
+    .time{
+        float: right;
+    }
+    }
+}
+#hamburger{
+    width: 100%;
+    float: none;
+}
+.navbar-toggler{
+    padding: 0;
+    width: 55.8px;
+    height: 10vh;
+    margin: 0;
+    border: 0;
+    p{
+        margin: 0;
+        height: 10vh;
+        text-align: center;
+        @include centerItems();
+        border: 1px solid grey;
+    }
+}
+.social-media{
+    hr{
+        width: 100vw;
+        color: white;
+    }
+    p{
+        display: inline;
+        margin-left: 2vw;
+    }
+    ul{
+        list-style-type: none;
+        display: flex;
+        float: right;
+        flex: 20%;
+        li{
+            float: right;
+            a{
+                color: white  !important;
+            }
+            a:hover{
+                color: #854fd4 !important;
+            }
+            i{
+                font-size: 2rem;
+                margin-right: 1vw;
+            }
+        }
+    }
+}
+.pointer{
+    background-color: white !important;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80vw;
+    margin-left: 10vw;
+    h5{
+        background-color: white !important;
+        color: black;
+        margin: 0;
+        width: 80vw;
+        font-weight: 350;
+    }
+}
+hr{
+    width: 80vw;
+}
+.filler{
+    background-color: grey;
+    height: 80vh;
+}
+.nav-item{
+    font-size: 1rem;
+    font-weight: 500;
+}
+footer{
+    hr{
+        width: 35vw;
+        color: white;
+    }
+    .links{
+        padding: 0;
+    }
+}
+#contact-button{
+    border-radius: 5px;
+    height: 7vh;
+    width: 10vw;
+    font-size: 1rem;
+}
+@media(max-width: 1100px){
+    .text-bubble{
+        height: 105vh;
+        font-size: 10px;
+    }
+    #contact-button{
+        height: 8vh;
+        width: 20vw;
+    }
+    .main-2{
+        height: 140vh;
+    }
+}
+@media(max-width: 700px){
+    .text-bubble{
+        height: 110vh;
+        width: 80vw;
+        p{
+            font-size: 1rem;
+        }
+    }
+    #contact-button{
+        height: 10vh;
+        width: 40vw;
+    }
+    .main-2{
+        height: 160vh; 
+    }
+}
+
+@media(max-height: 641px){
+    .text-bubble{
+        height: 120vh;
+    }
+}
+@media(max-height: 667px){
+    .text-bubble{
+        height: 80vh;
+        width: 80vw;
+        p{
+            font-size: 1rem;
+        }
+    }
+    #contact-button{
+        height: 10vh;
+        width: 10vw;
+    }
+    .main-2{
+        height: 150vh; 
+    }
+}
+@media(max-height: 600px){
+    .text-bubble{
+        height: 160vh !important;
+        width: 80vw;
+        p{
+            font-size: 1rem;
+        }
+    }
+    #contact-button{
+        height: 10vh;
+        width: 40vw;
+    }
+    .main-2{
+        height:200vh; 
+    }
+}
+@media(max-width: 700px){
+    .footer{
+        display: flex;
+        flex-direction: column;
+        height: 220vh;
+        padding: 0;
+        margin: 0;
+        grid-gap: 0px;
+        align-items: center;
+    }
+    .social-media{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-footer{
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        height: 150vh;
+        grid-gap: 0px;
+        align-items: center;
+        .logo-footer{
+            height: 50vh;
+            @include centerItems();
+            img{
+                width: auto;
+            }
+        }
+        .useful-link{
+            height: 50vh;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            margin: 0;
+        }
+        .opening-times{
+            height: 50vh;
+            width: 60vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100vw;
+            .day{
+                strong{
+                    margin-right: 3vw;
+                }
+            }
+        }
+    }
+}
+@media(max-height: 667px){
+    .text-bubble{
+        height: 140vh;
+        margin-bottom: 30vh;
+        #contact-button{
+            width: 30vw;
+        }
+    }
+    .main-2{
+        height: 170vh;
+    }
+    
+}
+/*
+How to solve the issue of an element not taking up the full width and having margin-right no matter what
+1. Use a non-bootstrap class as that's causing the issue.
+*/

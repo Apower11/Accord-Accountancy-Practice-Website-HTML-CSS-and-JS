@@ -1,0 +1,50 @@
+.contact {
+  width: 80vw;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body {
+  margin: 0;
+}
+
+.form-group {
+  width: 80vw;
+  font-size: 1rem;
+}
+
+.form-group input {
+  border-radius: 5px;
+}
+
+.contact {
+  margin-bottom: 6vh;
+  margin-left: 10vw;
+}
+
+.contact p {
+  font-size: 1rem;
+}
+
+.contact form {
+  margin-top: 5vh;
+}
+
+.contact form button {
+  width: 7vw;
+  border-radius: 5px;
+  height: 6.5vh;
+}
+/*# sourceMappingURL=contact.css.map */

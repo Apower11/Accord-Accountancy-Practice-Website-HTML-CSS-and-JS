@@ -1,0 +1,51 @@
+@mixin centerItems(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.healthcheck-image{
+@include centerItems();
+background-attachment: fixed;
+background-size: cover;
+height: 90vh;
+width: 80vw;
+margin-left: 10vw;
+}
+.text{
+    height: 70vh;
+    flex-direction: column;
+    margin-left: 6vw;
+    margin-top: 6vh;
+    h2{
+        margin-bottom: 2vh;
+    }
+    i{
+        font-size: 1rem;
+    }
+    p{
+        margin-top: 2vh;
+        font-size: 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+#book-button{
+    border-radius: 5px;
+    height: 7vh;
+    width: 20vw;
+    font-size: 1rem;
+}
+@media(max-width: 650px){
+    .text{
+        height: 110vh;
+    }
+    #book-button{
+        height: 10vh;
+        width: 30vw;
+    }
+    .healthcheck-image{
+        img{
+            width: 100vw;
+            height: 60vh;
+        }
+    }
+}
